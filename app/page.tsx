@@ -28,7 +28,9 @@ export default function Home() {
       <div>
         <p>Hello World</p>
         {/* <p>Average {data.map(item => item.AverageTemperature)}°c</p> */}
-        <p>Average Temperature: {tempData.map(item => item.AverageTemperature).join(', ')}°c</p>
+        <p>Average Temperature: {tempData.map(item => item.AverageTemperature)}°c</p>
+        <p>Date: {tempData.map(item => item.Date)}</p>
+        <p>HighestTemperature: {tempData.map(item => item.HighestTemperature)}°c</p>
 
       </div>
     </main>
